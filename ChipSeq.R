@@ -2,6 +2,7 @@
 # CDC20 location
 # hg38 chr1 43358981 43363203
 # hg19 chr1 43824626 43828874
+# chr1:43824626-43828874
 
 ## loading packages
 library(ChIPseeker)
