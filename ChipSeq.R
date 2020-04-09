@@ -1,6 +1,9 @@
+# data from 
+# https://www.encodeproject.org/experiments/ENCSR000EVI/
+# https://www.encodeproject.org/experiments/ENCSR000EVB/
 # Location hg19 chr1 43824529
-# CDC20 location
-# hg38 chr1 43358981 43363203
+# CDC20 gene location
+# hg38 chr1 43358955 43363203
 # hg19 chr1 43824626 43828874
 # chr1:43824626-43828874
 
@@ -12,7 +15,6 @@ library(clusterProfiler)
 
 peak = readPeakFile("~/biodata/CDC20/ENCFF001VHL.bed.gz")
 peak = readPeakFile("~/biodata/CDC20/ENCFF002CRM.bed.gz")
-peak = readPeakFile("~/biodata/CDC20/ENCFF000WXM.bigWig")
 peak
 
 covplot(peak, weightCol = "V5")
