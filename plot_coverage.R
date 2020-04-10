@@ -28,8 +28,8 @@ library(ggforce)
 start_point = 43824626
 
 dat = rbind(
-  HEK293_CDC20[, .(start, score)],
-  HEK293_CDC20[, .(end, score)],
+  HEK293_CDC20[, c("start", "score")],
+  HEK293_CDC20[, c("end", "score")],
   use.names = FALSE
 )
 dat = unique(dat)
@@ -45,8 +45,8 @@ ggplot(dat, aes(x=start, y=score)) +
 # dat[order(start)][start > start_point + 120]
 
 dat2 = rbind(
-  HELA_CDC20[, .(start, score)],
-  HELA_CDC20[, .(end, score)],
+  HELA_CDC20[, c("start", "score")],
+  HELA_CDC20[, c("end", "score")],
   use.names = FALSE
 )
 dat2 = unique(dat2)
